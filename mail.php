@@ -24,13 +24,13 @@ function sendMail($email)
     
         //Recipients
         $mail->setFrom('emailsender2727@gmail.com', 'Thank you for registratoin');
-        $mail->addAddress('mshaww36@gmail.com');
+        $mail->addAddress('$email');
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Babu';
-        $mail->Body    = 'Mele Babu ne thana thayaaa???';
-    
+        $mail->Subject = 'Subject Line';
+        $mail->Body    = 'BOdy Content';
+
         $mail->send();
         echo 'Message has been sent';
         // return true;
